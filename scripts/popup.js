@@ -25,6 +25,6 @@ document.getElementById("btn").addEventListener("click", () => {
   if (WebsiteUrl.toLowerCase().includes("chrome://")) {
     showError("You cannot block a chrome URL");
   } else {
-    console.log("no");
+    chrome.storage.local.get("BlockedUrls", (data) => {});
   }
 });
