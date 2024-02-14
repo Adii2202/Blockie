@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockie</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 400px;
+            max-height: 275px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: auto;
+            margin-top: 50px;
+            padding: 20px;
+        }
+
+        .topItem {
+            height: 65%;
+        }
+
+        .topItem>h1 {
+            font-family: 'Pacifico', cursive;
+            text-align: center;
+            padding: 0;
+            margin-top: 0;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .topItemMain {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .Info>p {
+            color: #666;
+            font-size: 14px;
+            margin: 0;
+        }
+
+        .Info>h4 {
+            color: #333;
+            font-size: 20px;
+            margin: 0;
+        }
+
+        #btn {
+            color: #fff;
+            font-weight: bold;
+            font-size: 16px;
+            padding: 10px 20px;
+            background-color: #f44336;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #btn:hover {
+            background-color: #d32f2f;
+        }
+
+        .bottomItem {
+            padding-top: 1rem;
+            height: 35%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .ERROR>p {
+            margin: 0;
+            font-size: 14px;
+            font-weight: bold;
+            /* background-color: #f44336; */
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: #f44336;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="topItem">
+
+            <h1>Blockie</h1>
+
+            <div class="topItemMain">
+                <div class="Info">
+                    <p>You are currently on:</p>
+                    <h4 id="url"></h4>
+                </div>
+                <button id="btn">BLOCK THIS URL</button>
+            </div>
+        </div>
+
+        <div class="bottomItem">
+            <!-- Additional content can be added here -->
+        </div>
+
+    </div>
+</body>
+<!-- inline js is not supported in chrome extensions -->
+<script src="./scripts/popup.js"></script>
+
+</html>
