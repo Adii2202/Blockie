@@ -14,7 +14,7 @@ chrome.runtime.onMessage.addListener((message, sender) => {
     var div = document.createElement("div");
     div.innerHTML = `
           <div class="STAYPtopItem">
-              <h1>Stay Productive</h1>
+              <h1>Blockie</h1>
               <div class="STAYPtopItemMain">
                   <div class="STAYPInfo">
                       <p>You are currently on :</p>

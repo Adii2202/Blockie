@@ -41,6 +41,7 @@ document.getElementById("btn").addEventListener("click", () => {
         setTimeout(() => {
           var then = new Date();
           then.setHours(24, 0, 0, 0);
+          // then.setSeconds(then.getSeconds() + 5);
           const blockTill = then.getTime();
 
           chrome.storage.local.set({
