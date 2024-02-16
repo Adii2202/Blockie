@@ -1,0 +1,3 @@
+- clone the repo
+- open the developer mode into chrome
+- Load unpacked the extension file into it
